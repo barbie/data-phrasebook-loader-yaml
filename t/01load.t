@@ -3,7 +3,7 @@ use strict;
 use lib 't';
 use vars qw( $class );
 
-use Test::More tests => 6;
+use Test::More tests => 7;
 
 # ------------------------------------------------------------------------
 
@@ -11,6 +11,7 @@ $class = 'Data::Phrasebook::Loader::YAML';
 use_ok($class);
 
 my $file = 't/01phrases.yaml';
+my $file2 = 't/01phrases2.yaml';
 
 # ------------------------------------------------------------------------
 
@@ -29,5 +30,11 @@ my $file = 't/01phrases.yaml';
     $obj->load( $file );
     $phrase = $obj->get('foo');
     like( $phrase, qr/Welcome to/);
+}
+
+{
+    my $obj = $class->new();
+    eval { $obj->load( $file2 ); };
+    like( $@, qr/Badly formatted YAML/);
 }
 
