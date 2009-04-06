@@ -3,51 +3,31 @@ use strict;
 use lib 't';
 use vars qw( $class );
 
-use Test::More tests => 7;
+use Test::More tests => 6;
 
 # ------------------------------------------------------------------------
 
-BEGIN {
-    $class = 'Data::Phrasebook';
-    use_ok $class;
-}
+$class = 'Data::Phrasebook::Loader::YAML';
+use_ok($class);
 
 my $file = 't/01phrases.yaml';
 
 # ------------------------------------------------------------------------
 
 {
-    my $obj = $class->new( loader => 'YAML' );
-    isa_ok( $obj => $class.'::Plain', "Bare new" );
-    $obj->file( $file );
-    is( $obj->file() => $file , "Set/get file works");
-}
+    my $obj = $class->new();
+    isa_ok( $obj => $class, "Bare new" );
 
-{
-    my $obj = $class->new( file => $file, loader => 'YAML' );
-    isa_ok( $obj => $class.'::Plain', "New with file" );
-    is( $obj->file() => $file , "Get file works");
+    my $phrase = $obj->get();
+    is($phrase,undef);
+    $phrase = $obj->get('foo');
+    is($phrase,undef);
 
-    {
-        my $str = $obj->fetch( 'foo', {
-                my => "Iain's",
-                place => 'locale',
-            });
+    eval { $obj->load(); };
+    ok($@);
 
-        is ($str, "Welcome to Iain's world. It is a nice locale.\n",
-            "Fetch matches" );
-    }
-
-    {
-        $obj->delimiters( qr{ :(\w+) }x );
-
-        my $str = $obj->fetch( 'bar', {
-                my => "Bob's",
-                place => 'whatever',
-            });
-
-        is ($str, "Welcome to Bob's world. It is a nice whatever.\n",
-            "Fetch matches" );
-    }
+    $obj->load( $file );
+    $phrase = $obj->get('foo');
+    like( $phrase, qr/Welcome to/);
 }
 

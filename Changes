@@ -1,10 +1,15 @@
 # Changes log for Data::Phrasebook::Loader::YAML
 
+0.05	25/03/2005
+		- Added DSLIP information
+		- Rewrote test scripts
+		- Devel::Cover - 97.6%
+
 0.04	03/03/2005
-	- POD updates.
+		- POD updates.
 
 0.03    02 Mar 2005
-	- Removed Test::MockObject from tests. No longer needed.
+		- Removed Test::MockObject from tests. No longer needed.
 
 0.02    24 Feb 2005
         - revamped and renamed as part of the Data::Phrasebook framework
