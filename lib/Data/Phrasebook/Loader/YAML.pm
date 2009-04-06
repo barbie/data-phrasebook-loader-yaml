@@ -5,7 +5,7 @@ use base qw( Data::Phrasebook::Loader::Base Data::Phrasebook::Debug );
 use Carp qw( croak );
 use YAML;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 =head1 NAME
 
@@ -104,8 +104,8 @@ C<key> will be returned, otherwise C<undef> is returned.
 
 sub get {
 	my ($class,$key) = @_;
-	return undef	unless($key);
-	return undef	unless($class->{yaml});
+	return	unless($key);
+	return	unless($class->{yaml});
 
     my @dicts = (ref $class->{dict} ? @{$class->{dict}} : ());
 
@@ -287,14 +287,15 @@ be forthcoming, please feel free to (politely) remind me.
 
 =head1 AUTHOR
 
-Original author: Iain Campbell Truskett (16.07.1979 - 29.12.2003).
+  Original author: Iain Campbell Truskett (16.07.1979 - 29.12.2003)
+  Maintainer: Barbie <barbie@cpan.org> since January 2004.
+  for Miss Barbell Productions <http://www.missbarbell.co.uk>.
 
-Maintainer: Barbie <barbie@cpan.org>.
+=head1 COPYRIGHT AND LICENSE
 
-=head1 LICENCE AND COPYRIGHT
-
-  Copyright (C) Iain Truskett, 2003. All rights reserved.
-  Copyright (C) Barbie, 2004-2006. All rights reserved.
+  Copyright (C) 2003 Iain Truskett. All rights reserved.
+  Copyright (C) 2004-2007 Barbie for Miss Barbell Productions.
+  All Rights Reserved.
 
   This library is free software; you can redistribute it and/or modify
   it under the same terms as Perl itself.

@@ -1,5 +1,13 @@
 # Changes log for Data::Phrasebook::Loader::YAML
 
+0.07    22/02/2007
+	- Handwritten META.yml to conform to current specs.
+	- Changed all instances of LICENCE to LICENSE as *apparently*, to all
+	  non-British users of this module, this a bug! I beg to differ -
+	  http://dictionary.reference.com/search?q=licence
+	- Added an examples directory. Nothing in it yet, except a request
+	  for interesting scripts.
+
 0.06    27/09/2006
         - Added support for dictionaries. This was a major patch submitted
           by Oliver Gorwits. Thanks Oliver :)

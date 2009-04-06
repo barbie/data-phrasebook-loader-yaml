@@ -7,6 +7,8 @@ WriteMakefile(
 		'YAML'             => '0.35',
         'Test::More'       => '0.47',
     },
+	NO_META			=> 1,
+
     ($] >= 5.005 ?
       (ABSTRACT_FROM => 'lib/Data/Phrasebook/Loader/YAML.pm',
        AUTHOR        => 'Barbie <barbie@cpan.org>') : ()),
