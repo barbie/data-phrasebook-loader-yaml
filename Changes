@@ -1,5 +1,9 @@
 # Changes log for Data::Phrasebook::Loader::YAML
 
+0.09    01/03/2007
+	- Fixed META.yml typos.
+	- Added META.yml test script.
+
 0.08    22/02/2007
 	- Fixed a mistake in the META.yml.
 
