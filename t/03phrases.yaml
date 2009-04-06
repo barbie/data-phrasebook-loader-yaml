@@ -1,0 +1,4 @@
+---
+find_author:
+    sql: select class,title,author from books where author = :author
+    comment: blah
