@@ -3,7 +3,7 @@ Data::Phrasebook::Loader::YAML
 
 DESCRIPTION
 
-    Abstract your queries ... with YAML!
+  Abstract your queries ... with YAML!
 
 This distribution enables the framework for abstracting common or locale data
 out of your code into a datastore. The default is within a plain text file,
@@ -64,8 +64,8 @@ AUTHOR
 
 COPYRIGHT AND LICENCE
 
-  Copyright (C) 2004-2005 Barbie for Miss Barbell Productions
-  Copyright (C) 2003 Iain Truskett
+  Copyright (C) 2004-2005 Barbie for Miss Barbell Productions.
+  Copyright (C) 2003 Iain Truskett.
   All Rights Reserved.
 
   This module is free software; you can redistribute it and/or 
