@@ -1,5 +1,8 @@
 # Changes log for Data::Phrasebook::Loader::YAML
 
+0.08    22/02/2007
+	- Fixed a mistake in the META.yml.
+
 0.07    22/02/2007
 	- Handwritten META.yml to conform to current specs.
 	- Changed all instances of LICENCE to LICENSE as *apparently*, to all
