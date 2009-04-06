@@ -5,7 +5,7 @@ use base qw( Data::Phrasebook::Loader::Base Data::Phrasebook::Debug );
 use Carp qw( croak );
 use YAML;
 
-our $VERSION = '0.09';
+my $VERSION = '0.10';
 
 =head1 NAME
 
@@ -30,10 +30,10 @@ This module provides a loader class for phrasebook implementations using YAML.
 
 =head1 DESCRIPTION
 
-This class loader implements phrasebook patterns using YAML. 
+This class loader implements phrasebook patterns using YAML.
 
-Phrases can be contained within one or more dictionaries, with each phrase 
-accessible via a unique key. Phrases may contain placeholders, please see 
+Phrases can be contained within one or more dictionaries, with each phrase
+accessible via a unique key. Phrases may contain placeholders, please see
 L<Data::Phrasebook> for an explanation of how to use these. Groups of phrases
 are kept in a dictionary. In this implementation a single file is one
 complete dictionary.
@@ -45,7 +45,7 @@ An example YAML file:
     Welcome to [% my %] world.
     It is a nice [%place %].
 
-Within the phrase text placeholders can be used, which are then replaced with 
+Within the phrase text placeholders can be used, which are then replaced with
 the appropriate values once the get() method is called. The default style of
 placeholders can be altered using the delimiters() method.
 
@@ -263,7 +263,7 @@ C<0000default>); it need not contain any keys.
 
 =head1 SEE ALSO
 
-L<Data::Phrasebook>, 
+L<Data::Phrasebook>,
 L<Data::Phrasebook::Loader>.
 
 =head1 BUGS, PATCHES & FIXES
@@ -271,8 +271,8 @@ L<Data::Phrasebook::Loader>.
 There are no known bugs at the time of this release. However, if you spot a
 bug or are experiencing difficulties, that is not explained within the POD
 documentation, please send an email to barbie@cpan.org or submit a bug to the
-RT system (http://rt.cpan.org/). However, it would help greatly if you are 
-able to pinpoint problems or even supply a patch. 
+RT system (http://rt.cpan.org/). However, it would help greatly if you are
+able to pinpoint problems or even supply a patch.
 
 Fixes are dependant upon their severity and my availablity. Should a fix not
 be forthcoming, please feel free to (politely) remind me.
@@ -293,9 +293,8 @@ be forthcoming, please feel free to (politely) remind me.
 
 =head1 COPYRIGHT AND LICENSE
 
-  Copyright (C) 2003 Iain Truskett. All rights reserved.
+  Copyright (C) 2003 Iain Truskett.
   Copyright (C) 2004-2007 Barbie for Miss Barbell Productions.
-  All Rights Reserved.
 
   This library is free software; you can redistribute it and/or modify
   it under the same terms as Perl itself.
