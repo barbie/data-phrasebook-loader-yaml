@@ -1,27 +1,33 @@
 # Changes log for Data::Phrasebook::Loader::YAML
 
-0.10	current
-	- removed 5.006 dependency.
+0.10    29/07/2012
+        - spelling fix. (thanks to Nicholas Bamber, Florian Schlichting & 
+          Gregor Herrmann).
+        - removed License files from distro.
+        - Artistic License v2 now sole license.
+        - removed DSLIP info.
+        - added minimum perl version (5.006).
+        - reworked Makefile.PL for clarity.
 
 0.09    01/03/2007
-	- Fixed META.yml typos.
-	- Added META.yml test script.
+        - Fixed META.yml typos.
+        - Added META.yml test script.
 
 0.08    22/02/2007
-	- Fixed a mistake in the META.yml.
+        - Fixed a mistake in the META.yml.
 
 0.07    22/02/2007
-	- Handwritten META.yml to conform to current specs.
-	- Changed all instances of LICENCE to LICENSE as *apparently*, to all
-	  non-British users of this module, this a bug! I beg to differ -
-	  http://dictionary.reference.com/search?q=licence
-	- Added an examples directory. Nothing in it yet, except a request
-	  for interesting scripts.
+        - Handwritten META.yml to conform to current specs.
+        - Changed all instances of LICENCE to LICENSE as *apparently*, to all
+          non-British users of this module, this a bug! I beg to differ -
+          http://dictionary.reference.com/search?q=licence
+        - Added an examples directory. Nothing in it yet, except a request
+          for interesting scripts.
 
 0.06    27/09/2006
         - Added support for dictionaries. This was a major patch submitted
           by Oliver Gorwits. Thanks Oliver :)
-	- more tests
+        - more tests
         - Devel::Cover - 99.2%
 
 0.05    25/03/2005
@@ -32,12 +38,12 @@
 0.04    03/03/2005
         - POD updates.
 
-0.03    02 Mar 2005
+0.03    02/03/2005
         - Removed Test::MockObject from tests. No longer needed.
 
-0.02    24 Feb 2005
+0.02    24/02/2005
         - revamped and renamed as part of the Data::Phrasebook framework
 
-0.01    31 Jan 2004
+0.01    31/01/2004
         - New maintainer - Barbie.
         - Extracted from main Phrasebook distribution

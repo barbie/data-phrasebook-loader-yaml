@@ -13,18 +13,21 @@ DEPENDENCIES
 
 The distribution requires the following modules:
 
-  Data::Phrasebook    >= 0.18
-  YAML                >= 0.35
+  Data::Phrasebook	        >= 0.24
+  YAML                      >= 0.35
 
 For testing purposes, the following modules are required:
 
-  Test::More          >= 0.47
+  Test::More		        >= 0.70
+  IO::File		            >= 0
 
 For testing purposes, the following modules are desireable, but not essential:
 
-  Test::Pod           >= 1.00
-  Test::Pod::Coverage >= 0.08
-  Pod::Coverage
+  Test::CPAN::Meta          >= 0
+  Test::CPAN::Meta::JSON    >= 0
+  Test::Pod                 >= 1.00
+  Test::Pod::Coverage       >= 0.08
+  Pod::Coverage             >= 0
 
 INSTALLATION
 
@@ -52,16 +55,8 @@ within the POD documentation, please send an email to barbie@cpan.org or
 submit a bug to the RT system (http://rt.cpan.org/). It would help greatly 
 if you are able to pinpoint problems or even supply a patch. 
 
-Fixes are dependant upon their severity and my availablity. Should a fix not
+Fixes are dependent upon their severity and my availability. Should a fix not
 be forthcoming, please feel free to (politely) remind me.
-
-DSLIP
-
-  b - Beta testing
-  d - Developer
-  p - Perl-only
-  O - Object oriented
-  p - Standard-Perl: user may choose between GPL and Artistic
 
 AUTHOR
 
@@ -72,9 +67,9 @@ AUTHOR
 
 COPYRIGHT AND LICENSE
 
-  Copyright (C) 2004-2005 Barbie for Miss Barbell Productions.
+  Copyright (C) 2004-2012 Barbie for Miss Barbell Productions.
   Copyright (C) 2003 Iain Truskett.
 
-  This module is free software; you can redistribute it and/or 
-  modify it under the same terms as Perl itself.
+  This module is free software; you can redistribute it and/or
+  modify it under the Artistic License 2.0.
 

@@ -1,15 +1,26 @@
-use ExtUtils::MakeMaker;
-WriteMakefile(
-    NAME            => 'Data::Phrasebook::Loader::YAML',
-    VERSION_FROM	=> 'lib/Data/Phrasebook/Loader/YAML.pm',
-    PREREQ_PM		=> {
-		'Data::Phrasebook' => '0.18',
-		'YAML'             => '0.35',
-        'Test::More'       => '0.47',
-    },
-	NO_META			=> 1,
+#!/usr/bin/perl
 
-    ($] >= 5.005 ?
-      (ABSTRACT_FROM => 'lib/Data/Phrasebook/Loader/YAML.pm',
-       AUTHOR        => 'Barbie <barbie@cpan.org>') : ()),
+use strict;
+use warnings;
+use 5.006;
+
+use ExtUtils::MakeMaker;
+
+WriteMakefile(
+    AUTHOR              => 'Barbie <barbie@cpan.org>',
+    NAME                => 'Data::Phrasebook::Loader::YAML',
+    VERSION_FROM        => 'lib/Data/Phrasebook/Loader/YAML.pm',
+    ABSTRACT            => 'Loader class for phrasebook implementations using YAML files',
+    NO_META             => 1,
+    PREREQ_PM           => {
+
+        # runtime prereqs
+        'Data::Phrasebook'      => '0.24',
+        'YAML'                  => '0.35',
+
+        # build/test prereqs
+        'Test::More'            => '0.70',
+        'IO::File'              => '0'
+
+    }
 );
