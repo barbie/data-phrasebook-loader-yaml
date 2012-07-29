@@ -5,7 +5,7 @@ use base qw( Data::Phrasebook::Loader::Base Data::Phrasebook::Debug );
 use Carp qw( croak );
 use YAML;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 =head1 NAME
 
@@ -68,8 +68,7 @@ dictionary support.
 
 =cut
 
-sub load
-{
+sub load {
     my ($class, $file, @dict) = @_;
     croak "No file given as argument!" unless defined $file;
     my ($d) = YAML::LoadFile( $file );
@@ -180,7 +179,8 @@ sub keywords {
         map { $keywords{$_} = 1 } keys %{$class->{default}};
     }
 
-    return (sort keys %keywords);
+    my @keywords = sort keys %keywords;
+    return @keywords;
 }
 
 =head2 set_default

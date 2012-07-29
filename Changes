@@ -1,5 +1,10 @@
 # Changes log for Data::Phrasebook::Loader::YAML
 
+0.11	29/07/2012
+	- added Carp as a prerequisite.
+	- added Test::Distribution as a optional test prerequisite.
+	- implemented Perl::Critic suggestions.
+
 0.10    29/07/2012
         - spelling fix. (thanks to Nicholas Bamber, Florian Schlichting & 
           Gregor Herrmann).

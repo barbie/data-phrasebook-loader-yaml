@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                   Data-Phrasebook-Loader-YAML
-version:                0.10
+version:                0.11
 abstract:               Loader class for phrasebook implementations using YAML files
 author:
   - Barbie <barbie@cpan.org>
@@ -11,11 +11,13 @@ installdirs:              site
 
 requires:
   perl:                   5.006
+  Carp:                   0
   Data::Phrasebook:       0.24
   YAML:                   0.35
 recommends:
   Test::CPAN::Meta:       0
   Test::CPAN::Meta::JSON: 0
+  Test::Distribution:     0
   Test::Pod:              1.00
   Test::Pod::Coverage:    0.08
 build_requires:
@@ -25,7 +27,7 @@ build_requires:
 provides:
   Data::Phrasebook::Loader::YAML:
     file: lib/Data/Phrasebook/Loader/YAML.pm
-    version: 0.10
+    version: 0.11
 
 no_index:
   directory:
