@@ -1,5 +1,8 @@
 # Changes log for Data::Phrasebook::Loader::YAML
 
+0.12	04/10/2012
+	- fixed prerequisites in META files (thanks to D Thomas RT#79204).
+
 0.11	29/07/2012
 	- added Carp as a prerequisite.
 	- added Test::Distribution as a optional test prerequisite.
