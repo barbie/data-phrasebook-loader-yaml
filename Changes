@@ -1,6 +1,6 @@
 # Changes log for Data::Phrasebook::Loader::YAML
 
-0.12    2012-10-04
+0.12    2012-10-07
         - fixed prerequisites in META files (thanks to D Thomas RT#79204).
         - change file dates changed to meet W3CDTF standards.
 
