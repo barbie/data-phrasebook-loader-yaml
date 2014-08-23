@@ -289,7 +289,7 @@ be forthcoming, please feel free to (politely) remind me.
 =head1 COPYRIGHT AND LICENSE
 
   Copyright (C) 2003 Iain Truskett.
-  Copyright (C) 2004-2012 Barbie for Miss Barbell Productions.
+  Copyright (C) 2004-2014 Barbie for Miss Barbell Productions.
 
   This distribution is free software; you can redistribute it and/or
   modify it under the Artistic License 2.0.

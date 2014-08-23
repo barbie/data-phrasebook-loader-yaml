@@ -1,5 +1,5 @@
-Data::Phrasebook::Loader::YAML
-==============================
+Data-Phrasebook-Loader-YAML
+===========================
 
 DESCRIPTION
 
@@ -70,6 +70,6 @@ COPYRIGHT AND LICENSE
   Copyright (C) 2004-2012 Barbie for Miss Barbell Productions.
   Copyright (C) 2003 Iain Truskett.
 
-  This module is free software; you can redistribute it and/or
+  This distribution is free software; you can redistribute it and/or
   modify it under the Artistic License 2.0.
 
