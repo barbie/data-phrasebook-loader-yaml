@@ -1,11 +1,18 @@
 package Data::Phrasebook::Loader::YAML;
+
 use strict;
 use warnings FATAL => 'all';
+
+our $VERSION = '0.12';
+
+#--------------------------------------------------------------------------
+
 use base qw( Data::Phrasebook::Loader::Base Data::Phrasebook::Debug );
+
 use Carp qw( croak );
 use YAML;
 
-our $VERSION = '0.12';
+#--------------------------------------------------------------------------
 
 =head1 NAME
 
@@ -284,7 +291,7 @@ be forthcoming, please feel free to (politely) remind me.
   Copyright (C) 2003 Iain Truskett.
   Copyright (C) 2004-2012 Barbie for Miss Barbell Productions.
 
-  This module is free software; you can redistribute it and/or
+  This distribution is free software; you can redistribute it and/or
   modify it under the Artistic License 2.0.
 
 =cut
