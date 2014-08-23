@@ -1,6 +1,7 @@
 Changes log for Data-Phrasebook-Loader-YAML
 ===========================================
 
+        - fixed license fields in META.json to be lists.
         - added cpanminus to INSTALL.
 
 0.12    2012-10-07
