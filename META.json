@@ -1,6 +1,6 @@
 {
     "name": "Data-Phrasebook-Loader-YAML",
-    "version": "0.12",
+    "version": "0.13",
     "abstract": "Loader class for phrasebook implementations using YAML files",
     "author": [
         "Barbie (BARBIE) <barbie@cpan.org>"
@@ -48,7 +48,7 @@
     "provides": {
         "Data::Phrasebook::Loader::YAML": {
             "file": "lib/Data/Phrasebook/Loader/YAML.pm",
-            "version": "0.12"
+            "version": "0.13"
         }
     },
     "no_index": {
